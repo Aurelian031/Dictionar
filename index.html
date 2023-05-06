@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<script src="javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Dictionar</h1>
+	<form>
+		<label for="cuvant">Introduceți un cuvânt:</label>
+		<input type="text" id="cuvant">
+		<button type="button" onclick="salveazaCuvant()">Salvează</button>
+	</form>
+	<form>
+		<label for="cauta">Caută cuvântul:</label>
+		<input type="text" id="cauta">
+        <button type="button" onclick="cautaCuvant()">Caută cuvânt</button>
+        <p id="mesaj-cautare"></p>
+	</form>
+  </body>
+</html>
