@@ -5,6 +5,7 @@ function saveWord() {
     document.getElementById("word").value = "";
 }
 function searchWord() {
+    
     let searchInput = document.getElementById("search");
     let searchMessage = document.getElementById("Search-message");
     searchMessage.innerText = "";
