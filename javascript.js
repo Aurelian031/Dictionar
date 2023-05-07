@@ -1,21 +1,17 @@
-var cuvinteSalvate = [];
-
-      function salveazaCuvant() {
-        var cuvant = document.getElementById("cuvant").value;
-        cuvinteSalvate.push(cuvant);
-        document.getElementById("cuvant").value = "";
-      }
-        
-      function cautaCuvant() {
-            var inputCautare = document.getElementById("cauta");
-            var mesajCautare = document.getElementById("mesaj-cautare");
-            mesajCautare.innerText = "";
-               if (cuvinteSalvate.includes(inputCautare.value)) {
-                mesajCautare.innerText = "Cuvântul se află în dicționar.";
-              } else {
-                mesajCautare.innerText = "Cuvântul nu există în dicționar.";
-              }
-              document.getElementById("cauta").value = "";
-            }
-            
-          
+let savedWords = [];
+function saveWord() {
+    let word = document.getElementById("word").value;
+    savedWords.push(word);
+    document.getElementById("word").value = "";
+}
+function searchWord() {
+    let searchInput = document.getElementById("search");
+    let searchMessage = document.getElementById("Search-message");
+    searchMessage.innerText = "";
+    if (savedWords.includes(searchInput.value)) {
+        searchMessage .innerText = "The word is in the dictionary.";
+    } else {
+        searchMessage.innerText = "The word is not in the dictionary.";
+  }
+  document.getElementById("search").value = "";
+}
